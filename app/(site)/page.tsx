@@ -6,7 +6,7 @@ export default async function Home() {
   const projects = await getProjects();
 
   return (
-    <div className="max-w-5xl mx-auto py-20">
+    <div>
       <h1 className="font-extrabold text-7xl">
         Hello I&apos;m{" "}
         <span className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-700 bg-clip-text text-transparent">
@@ -30,7 +30,7 @@ export default async function Home() {
               <Image
                 width={750}
                 height={100}
-                className="object-cover rounded-lg border border-gray-500"
+                className="object-cover w-full h-full max-w-full max-h-full rounded-lg border border-gray-500"
                 src={project.image}
                 alt={project.alt}
               />

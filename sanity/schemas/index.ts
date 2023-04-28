@@ -1,3 +1,2 @@
-import { project } from "./project-schemas";
-
-export const schemas = [project];
+export * from "./page-schemas";
+export * from "./project-schemas";
